@@ -15,9 +15,14 @@
     <h2>📰 Neueste Nachrichten aus Deutschland</h2>
     <ul id="news-list">Nachrichten werden geladen...</ul>
 
-    <h2>📹 Live-Video aus Deutschland</h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/8HpjSKdGvD0" title="Live aus Berlin"
-      frameborder="0" allowfullscreen></iframe>
+    <h2>📸 Live-Foto: Schloss Neuschwanstein</h2>
+    <img id="live-cam" src="https://images.skylinewebcams.com/whtt/cam1920.jpg" alt="Neuschwanstein Live" style="width:100%; max-width:600px;" />
+    <script>
+      const img = document.getElementById("live-cam");
+      setInterval(() => {
+        img.src = "https://images.skylinewebcams.com/whtt/cam1920.jpg?ts=" + Date.now();
+      }, 300000);
+    </script>
   </div>
 
   <script src="script.js"></script>
