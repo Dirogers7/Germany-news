@@ -15,14 +15,22 @@
     <h2>📰 Neueste Nachrichten aus Deutschland</h2>
     <ul id="news-list">Nachrichten werden geladen...</ul>
 
-    <h2>📸 Live-Foto: Schloss Neuschwanstein</h2>
-    <img id="live-cam" src="https://images.skylinewebcams.com/whtt/cam1920.jpg" alt="Neuschwanstein Live" style="width:100%; max-width:600px;" />
-    <script>
-      const img = document.getElementById("live-cam");
-      setInterval(() => {
-        img.src = "https://images.skylinewebcams.com/whtt/cam1920.jpg?ts=" + Date.now();
-      }, 300000);
-    </script>
+    
+<h2>📸 Bilder aus Deutschland</h2>
+<div id="slideshow">
+  <img id="slideshow-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Brandenburger_Tor_abends.jpg" alt="Deutschland Bild" style="width:100%; max-width:600px;" />
+</div>
+<script>
+  const slideshowImages = ['https://upload.wikimedia.org/wikipedia/commons/6/6a/Brandenburger_Tor_abends.jpg', 'https://upload.wikimedia.org/wikipedia/commons/9/95/Schloss_Neuschwanstein.jpg', 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Koelner_Dom_vom_Rhein.jpg', 'https://upload.wikimedia.org/wikipedia/commons/2/29/Hamburg_Harbour.jpg'];
+  let currentIndex = 0;
+  const slideshowImg = document.getElementById("slideshow-img");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slideshowImages.length;
+    slideshowImg.src = slideshowImages[currentIndex];
+  }, 5000);
+</script>
+
   </div>
 
   <script src="script.js"></script>
