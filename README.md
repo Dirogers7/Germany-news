@@ -1,10 +1,11 @@
-# Germany Time & News
-This is a simple static site that displays the current time in Germany and the latest German news headlines.
+# Deutschland Zeit & Nachrichten (🇩🇪)
+Diese statische Website zeigt die aktuelle Uhrzeit in Deutschland und die neuesten Nachrichten.
 
-## Features
-- Real-time Germany time (Berlin timezone)
-- Top 5 news headlines from Spiegel International
+## Funktionen
+- Realtime-Zeit in Deutschland (Berlin)
+- Top 5 Schlagzeilen aus Spiegel International
+- Eingebettetes Live-Video aus Berlin
 
-## How to Use
-1. Open `index.html` in your browser.
-2. Or upload the folder to GitHub and enable GitHub Pages to host it online.
+## Nutzung
+1. Öffne `index.html` in deinem Browser
+2. Oder lade die Dateien zu GitHub hoch und aktiviere GitHub Pages, um sie online zu sehen.
